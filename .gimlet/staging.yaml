@@ -7,5 +7,4 @@ chart:
     version: 0.32.0
 values:
     image:
-        repository: nginxa
-    replicas: 0
+        repository: nginxaa
