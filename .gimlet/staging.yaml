@@ -6,5 +6,4 @@ chart:
     name: onechart
     version: 0.32.0
 values:
-    image:
-        repository: nginxaaa
+    replicas: 14
