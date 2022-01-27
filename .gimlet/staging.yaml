@@ -8,38 +8,6 @@ chart:
 values:
     containerPort: 80
     image:
-        repository: examplea1
+        repository: nginx
         tag: 1.19.3
-    ingress:
-        annotations: {}
-        host: ""
-        tlsEnabled: true
-    podDisruptionBudgetEnabled: false
-    probe:
-        enabled: true
-        path: /
-        settings:
-            failureThreshold: 3
-            initialDelaySeconds: 0
-            periodSeconds: 10
-            successThreshold: 1
-            timeoutSeconds: 3
     replicas: 1
-    resources:
-        limits:
-            cpu: 100m
-            memory: 100Mi
-        requests:
-            cpu: 200m
-            memory: 200Mi
-    sealedSecrets:
-        newKey: New Value
-    spreadAcrossNodes: true
-    vars:
-        newKey: New Value
-        newKey-1: New Value
-    volumes:
-        - name: data
-          path: /data
-          size: 10Gi
-          storageClass: ""
