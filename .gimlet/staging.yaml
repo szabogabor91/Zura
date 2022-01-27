@@ -34,6 +34,7 @@ values:
             memory: 200Mi
     sealedSecrets:
         newKey: New Value
+    spreadAcrossNodes: true
     vars:
         newKey: New Value
         newKey-1: New Value
