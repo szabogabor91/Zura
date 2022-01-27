@@ -7,4 +7,23 @@ chart:
     version: 0.32.0
 values:
     image:
-        repository: nginxaa
+        repository: example
+    ingress:
+        tlsEnabled: true
+    podDisruptionBudgetEnabled: false
+    probe:
+        enabled: true
+    resources:
+        limits:
+            cpu: 100m
+            memory: 100Mi
+    sealedSecrets:
+        newKey: New Value
+    vars:
+        newKey: New Value
+        newKey-1: New Value
+    volumes:
+        - name: data
+          path: /data
+          size: 10Gi
+          storageClass: ""
