@@ -6,37 +6,34 @@ chart:
     name: onechart
     version: 0.32.0
 values:
-    containerPort: 801
+    containerPort: 1
     image:
-        repository: example123
-        tag: 1.19.3
+        repository: newExample123
+        tag: 1.0.1
     ingress:
         annotations:
             newKey: New Value
             newKey-1: New Value
-        host: ""
-        tlsEnabled: false
-    podDisruptionBudgetEnabled: true
+            newKey-2: New Value
+            newKey-3: New Value
+        host: ASD
+    podDisruptionBudgetEnabled: false
     probe:
-        enabled: false
-        path: /
+        enabled: true
         settings:
-            failureThreshold: 3
-            initialDelaySeconds: 0
-            periodSeconds: 10
-            successThreshold: 1
-            timeoutSeconds: 3
-    replicas: 6
+            failureThreshold: 8
+            initialDelaySeconds: 75
+            periodSeconds: 20
+            successThreshold: 5
+    replicas: 0
     resources:
         limits:
-            cpu: 500m
-            memory: 500Mi
+            cpu: 400m
+            memory: 400Mi
         requests:
-            cpu: 500m
-            memory: 500Mi
+            cpu: 300m
+            memory: 300Mi
     sealedSecrets:
-        newKey: New Value
-        newKey-1: New Value
         newKey-2: New Value
         newKey-3: New Value
     spreadAcrossNodes: false
@@ -45,8 +42,3 @@ values:
         newKey-1: New Value
         newKey-2: New Value
         newKey-3: New Value
-    volumes:
-        - name: data123
-          path: /data
-          size: 10Gi
-          storageClass: ""
