@@ -8,7 +8,7 @@ chart:
 values:
     containerPort: 1
     image:
-        repository: newExample123
+        repository: newExample1231
         tag: 1.0.1
     ingress:
         annotations:
