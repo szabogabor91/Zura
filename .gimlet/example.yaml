@@ -1,14 +1,15 @@
 app: example
 env: valamienv
-namespace: example123
+namespace: megvaltoztattam
 chart:
   repository: https://chart.onechart.dev
   name: onechart
   version: 0.32.0
 values:
-  containerPort: 801
+  containerPort: 8
   image:
-    repository: nginx123
+    repository: eztis
+  replicas: 4
 strategicMergePatches: ""
 json6902Patches: []
 manifests: ""
