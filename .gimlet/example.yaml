@@ -1,6 +1,6 @@
 app: example
 env: valamienv
-namespace: ezmostjo
+namespace: example123
 chart:
   repository: https://chart.onechart.dev
   name: onechart
