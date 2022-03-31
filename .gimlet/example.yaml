@@ -6,10 +6,9 @@ chart:
   name: onechart
   version: 0.32.0
 values:
-  containerPort: 1
+  containerPort: 100
   image:
-    repository: nginxmostjolesz
-  replicas: 3
+    repository: nginxmostjolesztenyleg
 strategicMergePatches: ""
 json6902Patches: []
 manifests: ""
