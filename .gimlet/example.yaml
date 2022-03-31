@@ -1,16 +1,12 @@
 app: example
 env: example
-namespace: example123123
+namespace: example
 chart:
   repository: https://chart.onechart.dev
   name: onechart
   version: 0.32.0
 values:
-  containerPort: 800
-  image:
-    repository: nginx10
-    tag: 1.19.3.10
-  replicas: 4
+  replicas: 2
 strategicMergePatches: ""
 json6902Patches: []
 manifests: ""
