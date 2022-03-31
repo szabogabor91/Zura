@@ -1,6 +1,6 @@
 app: example
 env: example
-namespace: example
+namespace: nagyonjo
 chart:
   repository: https://chart.onechart.dev
   name: onechart
@@ -8,7 +8,7 @@ chart:
 values:
   containerPort: 800
   image:
-    repository: nginx1
+    repository: nginx10
   replicas: 9
 strategicMergePatches: ""
 json6902Patches: []
