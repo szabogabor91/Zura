@@ -1,6 +1,6 @@
 app: example
 env: valamienv
-namespace: ezmostjo
+namespace: example123
 chart:
   repository: https://chart.onechart.dev
   name: onechart
@@ -8,34 +8,7 @@ chart:
 values:
   containerPort: 801
   image:
-    repository: ezisjo
-  ingress:
-    annotations:
-      newKey: New Value
-    host: name
-  podAnnotations:
-    newKey: New Value
-  podDisruptionBudgetEnabled: false
-  probe:
-    path: /asd
-  replicas: 3
-  resources:
-    limits:
-      cpu: 500m
-      memory: 100Mi
-    requests:
-      cpu: 400m
-      memory: 123Mi
-  sealedSecrets:
-    newKey: New Value
-  secretEnabled: true
-  vars:
-    newKey: New Value
-  volumes:
-    - name: data
-      path: /data
-      size: 10Gi
-      storageClass: ""
+    repository: nginx123
 strategicMergePatches: ""
 json6902Patches: []
 manifests: ""
