@@ -1,13 +1,15 @@
 app: example
 env: valamienv
-namespace: ezmostmukodik
+namespace: example1111
 chart:
   repository: https://chart.onechart.dev
   name: onechart
   version: 0.32.0
 values:
-  image:
-    repository: nginx1
+  config:
+    image:
+      repository: nginx1111
+  namespace: example1111
 strategicMergePatches: ""
 json6902Patches: []
 manifests: ""
