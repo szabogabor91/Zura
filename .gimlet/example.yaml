@@ -9,6 +9,7 @@ values:
   containerPort: 800
   image:
     repository: nginx10
+    tag: 1.19.3.1
   replicas: 9
 strategicMergePatches: ""
 json6902Patches: []
