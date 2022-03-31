@@ -1,15 +1,13 @@
 app: example
 env: valamienv
-namespace: example1111
+namespace: example
 chart:
   repository: https://chart.onechart.dev
   name: onechart
   version: 0.32.0
 values:
-  config:
-    image:
-      repository: nginx1111
-  namespace: example1111
+  image:
+    repository: nginx222
 strategicMergePatches: ""
 json6902Patches: []
 manifests: ""
