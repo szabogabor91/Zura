@@ -1,13 +1,11 @@
 app: example
 env: example
-namespace: example1
+namespace: example
 chart:
   repository: https://chart.onechart.dev
   name: onechart
   version: 0.32.0
-values:
-  image:
-    repository: nginx1
+values: {}
 strategicMergePatches: ""
 json6902Patches: []
 manifests: ""
