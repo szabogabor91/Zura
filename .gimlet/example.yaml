@@ -1,6 +1,6 @@
 app: example
 env: example
-namespace: example123
+namespace: example0
 chart:
   repository: https://chart.onechart.dev
   name: onechart
