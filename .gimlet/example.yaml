@@ -1,6 +1,6 @@
 app: example
 env: example
-namespace: asd1
+namespace: asd12
 chart:
   repository: https://chart.onechart.dev
   name: onechart
