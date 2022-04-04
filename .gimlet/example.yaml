@@ -7,7 +7,7 @@ chart:
   version: 0.32.0
 values:
   image:
-    repository: nginx123
+    repository: nginxa
 strategicMergePatches: ""
 json6902Patches: []
 manifests: ""
