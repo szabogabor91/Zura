@@ -6,6 +6,8 @@ chart:
   name: onechart
   version: 0.32.0
 values:
+  image:
+    repository: oijiu
   replicas: 2
 strategicMergePatches: ""
 json6902Patches: []
