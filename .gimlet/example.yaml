@@ -1,16 +1,11 @@
 app: example
 env: example
-namespace: asd123321
+namespace: asd
 chart:
   repository: https://chart.onechart.dev
   name: onechart
   version: 0.32.0
-values:
-  containerPort: 801
-  image:
-    repository: 123nginx
-    tag: 1.19.322
-  replicas: 6
+values: {}
 strategicMergePatches: ""
 json6902Patches: []
 manifests: ""
