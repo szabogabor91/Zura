@@ -1,0 +1,13 @@
+app: Zura
+env: exchange
+namespace: asdasdasd
+chart:
+  repository: https://chart.onechart.dev
+  name: onechart
+  version: 0.32.0
+values:
+  image:
+    repository: nginx1
+strategicMergePatches: ""
+json6902Patches: []
+manifests: ""
