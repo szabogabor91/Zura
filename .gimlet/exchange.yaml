@@ -1,13 +1,11 @@
 app: coolApp
 env: exchange
-namespace: coolNamespace123
+namespace: coolNamespace
 chart:
   repository: https://chart.onechart.dev
   name: onechart
   version: 0.32.0
-values:
-  image:
-    repository: nginx123
+values: {}
 strategicMergePatches: ""
 json6902Patches: []
 manifests: ""
