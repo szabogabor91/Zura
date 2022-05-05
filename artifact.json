@@ -1,0 +1,140 @@
+{
+  "version": {
+    "repositoryName": "laszlocph/gimletd-test-repo",
+    "sha": "61b1200c7c2b99c9e151c107d880d90196f3999a",
+    "created": 1651755265,
+    "branch": "main",
+    "authorName": "Laszlo Fogas",
+    "authorEmail": "laszlo@laszlo.cloud",
+    "committerName": "Laszlo Fogas",
+    "committerEmail": "laszlo@laszlo.cloud",
+    "message": "Add create-a",
+    "url": "https://github.com/laszlocph/gimletd-test-repo/commit/61b1200c7c2b99c9e151c107d880d90196f3999a"
+  },
+  "context": {
+    "GITHUB_BRANCH": "main",
+    "GITHUB_SHA": "61b1200c7c2b99c9e151c107d880d90196f3999a"
+  },
+  "environments": [
+    {
+      "app": "example",
+      "env": "example",
+      "namespace": "asd",
+      "chart": {
+        "repository": "https://chart.onechart.dev",
+        "name": "onechart",
+        "version": "0.32.0"
+      },
+      "values": {
+        "image": {
+          "repository": "nginx1"
+        }
+      },
+      "strategicMergePatches": "",
+      "json6902Patches": [],
+      "manifests": ""
+    },
+    {
+      "app": "production",
+      "env": "production",
+      "namespace": "abs",
+      "chart": {
+        "repository": "https://chart.onechart.dev",
+        "name": "onechart",
+        "version": "0.32.0"
+      },
+      "values": {
+        "image": {
+          "repository": "oijiu"
+        },
+        "replicas": 2
+      },
+      "strategicMergePatches": "",
+      "json6902Patches": [],
+      "manifests": ""
+    },
+    {
+      "app": "react-app",
+      "env": "staging",
+      "namespace": "staging123",
+      "chart": {
+        "repository": "https://chart.onechart.dev",
+        "name": "onechart",
+        "version": "0.32.0"
+      },
+      "values": {
+        "gitRepository": "gimlet-io/test-app",
+        "gitSha": "{{ .GITHUB_SHA }}",
+        "image": {
+          "repository": "ghcr.io/podtato-head/podtatoserver",
+          "tag": "v0.1.1"
+        },
+        "vars": {
+          "MY_ENV": "This is a value"
+        }
+      },
+      "strategicMergePatches": "",
+      "json6902Patches": [],
+      "manifests": ""
+    },
+    {
+      "app": "Zura",
+      "env": "staging",
+      "namespace": "staging",
+      "chart": {
+        "repository": "https://chart.onechart.dev",
+        "name": "onechart",
+        "version": "0.32.0"
+      },
+      "values": {
+        "containerPort": 1,
+        "image": {
+          "repository": "newExample123",
+          "tag": "1.0.1"
+        },
+        "ingress": {
+          "annotations": {
+            "newKey": "New Value",
+            "newKey-1": "New Value",
+            "newKey-2": "New Value",
+            "newKey-3": "New Value"
+          },
+          "host": "ASD"
+        },
+        "probe": {
+          "enabled": true,
+          "settings": {
+            "failureThreshold": 8,
+            "initialDelaySeconds": 75,
+            "periodSeconds": 20,
+            "successThreshold": 5
+          }
+        },
+        "replicas": 0,
+        "resources": {
+          "limits": {
+            "cpu": "400m",
+            "memory": "400Mi"
+          },
+          "requests": {
+            "cpu": "300m",
+            "memory": "300Mi"
+          }
+        },
+        "sealedSecrets": {
+          "newKey-2": "New Value",
+          "newKey-3": "New Value"
+        },
+        "vars": {
+          "newKey": "New Value",
+          "newKey-1": "New Value",
+          "newKey-2": "New Value",
+          "newKey-3": "New Value"
+        }
+      },
+      "strategicMergePatches": "",
+      "json6902Patches": null,
+      "manifests": ""
+    }
+  ]
+}
