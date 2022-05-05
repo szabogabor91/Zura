@@ -9,7 +9,7 @@ rm artifact.json
 
 echo "Creating artifact.."
 gimlet artifact create \
---repository "laszlocph/gimletd-test-repo" \
+--repository "szabogabor91/Zura" \
 --sha "$HASH" \
 --created "$DATE" \
 --branch "$BRANCH" \
@@ -19,7 +19,7 @@ gimlet artifact create \
 --committerName "Laszlo Fogas" \
 --committerEmail "laszlo@laszlo.cloud" \
 --message "$MESSAGE" \
---url "https://github.com/laszlocph/gimletd-test-repo/commit/$HASH" \
+--url "https://github.com/szabogabor91/Zura/commit/$HASH" \
 > artifact.json
 
 echo "Attaching Gimlet manifests.."

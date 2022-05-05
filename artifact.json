@@ -1,19 +1,19 @@
 {
   "version": {
-    "repositoryName": "laszlocph/gimletd-test-repo",
-    "sha": "61b1200c7c2b99c9e151c107d880d90196f3999a",
-    "created": 1651755265,
+    "repositoryName": "szabogabor91/Zura",
+    "sha": "84f1d6f5421180ab6f38e3711353191b3b41fac7",
+    "created": 1651756934,
     "branch": "main",
     "authorName": "Laszlo Fogas",
     "authorEmail": "laszlo@laszlo.cloud",
     "committerName": "Laszlo Fogas",
     "committerEmail": "laszlo@laszlo.cloud",
-    "message": "Add create-a",
-    "url": "https://github.com/laszlocph/gimletd-test-repo/commit/61b1200c7c2b99c9e151c107d880d90196f3999a"
+    "message": "Add new artifact",
+    "url": "https://github.com/szabogabor91/Zura/commit/84f1d6f5421180ab6f38e3711353191b3b41fac7"
   },
   "context": {
     "GITHUB_BRANCH": "main",
-    "GITHUB_SHA": "61b1200c7c2b99c9e151c107d880d90196f3999a"
+    "GITHUB_SHA": "84f1d6f5421180ab6f38e3711353191b3b41fac7"
   },
   "environments": [
     {
@@ -78,62 +78,21 @@
       "manifests": ""
     },
     {
-      "app": "Zura",
+      "app": "staging",
       "env": "staging",
-      "namespace": "staging",
+      "namespace": "default",
       "chart": {
         "repository": "https://chart.onechart.dev",
         "name": "onechart",
         "version": "0.32.0"
       },
       "values": {
-        "containerPort": 1,
-        "image": {
-          "repository": "newExample123",
-          "tag": "1.0.1"
-        },
-        "ingress": {
-          "annotations": {
-            "newKey": "New Value",
-            "newKey-1": "New Value",
-            "newKey-2": "New Value",
-            "newKey-3": "New Value"
-          },
-          "host": "ASD"
-        },
-        "probe": {
-          "enabled": true,
-          "settings": {
-            "failureThreshold": 8,
-            "initialDelaySeconds": 75,
-            "periodSeconds": 20,
-            "successThreshold": 5
-          }
-        },
-        "replicas": 0,
-        "resources": {
-          "limits": {
-            "cpu": "400m",
-            "memory": "400Mi"
-          },
-          "requests": {
-            "cpu": "300m",
-            "memory": "300Mi"
-          }
-        },
-        "sealedSecrets": {
-          "newKey-2": "New Value",
-          "newKey-3": "New Value"
-        },
-        "vars": {
-          "newKey": "New Value",
-          "newKey-1": "New Value",
-          "newKey-2": "New Value",
-          "newKey-3": "New Value"
-        }
+        "gitRepository": "szabogabor91/Zura",
+        "gitSha": "{{ .GITHUB_SHA }}",
+        "replicas": 2
       },
       "strategicMergePatches": "",
-      "json6902Patches": null,
+      "json6902Patches": [],
       "manifests": ""
     }
   ]
