@@ -1,6 +1,6 @@
 app: react-app
 env: staging
-namespace: staging123
+namespace: staging
 chart:
   repository: https://chart.onechart.dev
   name: onechart
